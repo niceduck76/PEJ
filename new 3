@@ -1,0 +1,9 @@
+feign:
+  hystrix:
+    enabled: true
+	
+	
+	kubectl apply -f https://k8s.io/examples/application/php-apache.yaml
+(오토 스케일링 설정, hpa: HorizontalPodAutoscaler )
+kubectl autoscale deployment php-apache --cpu-percent=20 --min=1 --max=10
+kubectl get hpa php-apache -o yaml

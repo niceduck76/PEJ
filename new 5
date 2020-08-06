@@ -1,0 +1,21 @@
+1.hpa
+timeout 로직이 없는 이미지로 하는것이 깔끔하겠다.
+
+hpa설정
+seige 부하
+오토스케일링 확인(replica가 늘어나는 것을 모니터링 한다)
+2.readinessProbe
+deployment.yaml 설정을 있는버전 없는버전 두가지 준비한다.
+
+있는버전을 deploy 생성
+부하테스트 100%성공 확인
+없는 버전을 deploy
+부하테스트 낮은 성공율 확인
+3.CB
+보내는 쪽에서 histrix 옵션을 있는 이미지, 없는 이미지 준비
+받는 쪽에서는 time-out이 있어야 함
+
+histrix 있는 이미지 실행
+부하테스트 걸어서 차단(cb) 확인
+histrix 없는 이미지 실행
+부하테스트 걸어서 죽는거 확인

@@ -1,0 +1,68 @@
+1.hpa
+kubectl apply -f deployment.yml
+설정확인:
+kubectl get deploy taegbae -o yaml
+
+
+kubectl set image deploy purchase purchase=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v1
+kubectl set image deploy purchase purchase=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v2
+
+hpa설정
+kubectl get hpa
+kubectl autoscale deploy pay --min=1 --max=10 --cpu-percent=15
+
+seige 부하
+kubectl exec -it siege -- /bin/bash
+siege -c10 -t100S -r10 --content-type "application/json" 'http://purchase:8080/purchases POST {"purchaseId": "22"}' -v
+
+3)이미지교체(v1 -> v2)
+kubectl set image deploy purchase purchase=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v2
+
+
+
+2. auto scaling
+오토스케일링 확인(pod가 늘어나는 것을 모니터링 한다)
+kubectl get pod -w
+
+{deploy 제거 & 재생성 : 오래걸림}
+kubectl delete deploy,service taegbae
+
+
+
+
+
+
+4)부하테스트 100%성공 확인
+
+[없는 버전을 deploy]
+taegbae/kubernetes/위치에 가서 readinessProbe 값 확인:
+cat deployment.yml
+
+kubectl apply -f deployment.yml
+
+설정확인:
+kubectl get deploy taegbae -o yaml
+
+실행중인 이미지 버전 확인:
+kubectl get deploy pay -o wide
+
+seige 부하 시작
+kubectl exec -it siege -- /bin/bash
+siege -c1 -t40S -r10 --content-type "application/json" 'http://taegbae:8080/taegbaes POST {"purchaseId": "33"}' -v
+3)이미지교체(v2 -> v1)
+이미지 교체:
+kubectl set image deploy order order=496278789073.dkr.ecr.ap-northeast-2.amazonaws.com/user26pay:v2
+kubectl set image deploy order order=496278789073.dkr.ecr.ap-northeast-2.amazonaws.com/user26pay:v1
+
+4)부하테스트 실패 확인
+kubectl exec -it siege -- /bin/bash
+siege -c20 -t40S -r5 --content-type "application/json" 'http://order:8080/taegbae POST {"purchaseId": "1"}' -v
+
+3.CB
+보내는 쪽에서 histrix 옵션을 있는 이미지, 없는 이미지 준비
+받는 쪽에서는 time-out이 있어야 함
+
+histrix 있는 이미지 실행
+부하테스트 걸어서 차단(cb) 확인
+histrix 없는 이미지 실행
+부하테스트 걸어서 죽는거 확인

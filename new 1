@@ -1,0 +1,45 @@
+담배 order
+http POST a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+http POST a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+
+담배 구매
+http POST localhost:8088/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+http localhost:8088/purchases
+	
+담배 구매 취소
+http DELETE localhost:8088/purchases/1
+http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/purchases
+
+DM 발송
+http POST localhost:8088/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+http PATCH localhost:8088/tbMarketings/1 purchaseStatus="DM발송"
+http localhost:8080/tbMarketings/
+http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases
+
+
+보드에서 내용 확인
+http localhost:8088/tbMarketingBoards
+
+
+
+
+
+
+
+
+담배 구매
+http POST ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases
+	
+담배 구매 취소
+http DELETE localhost:8088/purchases/1
+http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases
+
+DM 발송
+http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchase
+http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketingBoards
+http PATCH a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings/1 purchaseStatus="DM발송"
+
+보드에서 내용 확인
+http localhost:8088/tbMarketingBoards

@@ -1,0 +1,1000 @@
+ 411  pwd
+  412  ls
+  413  cd mybtrade
+  414  git pull orgin master
+  415  git pull origin master
+  416  ls
+  417  cd sale
+  418  ls
+  419  cd src
+  420  ls
+  421  cd main
+  422  cd ja*
+  423  ;ls
+  424  ls
+  425  cd my*
+  426  ls
+  427  cd ex*
+  428  ls
+  429  nano TradingService.java
+  430  cd ..
+  431  ls
+  432  git pull origin master
+  433  ls
+  434  cd sale
+  435  mvn package
+  436  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1 .
+  437  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1
+  438  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1
+  439  kubectl delete svc sale
+  440  kubectl delete deploy sale
+  441  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1
+  442  kubectl expose deploy sale --type=ClusterIP --port=8080
+  443  kubectl log pod/sale-5c9b69d6fd-lfqhc
+  444  kubectl logs pod/sale-5c9b69d6fd-lfqhc
+  445  ls
+  446  cd src
+  447  ls
+  448  cd main
+  449  ls
+  450  cd java
+  451  l;s
+  452  ls
+  453  cd my*
+  454  ls
+  455  cd ex*
+  456  ls
+  457  cat TradingService.java
+  458  cd ..
+  459  ls
+  460  cd ..
+  461  ls
+  462  cd my*
+  463  ls
+  464  cd ..
+  465  ls
+  466  cd re*
+  467  ls
+  468  cat application.yml
+  469  cd ..
+  470  ls
+  471  cs ta*
+  472  ls
+  473  cd target
+  474  ls
+  475  ls -al
+  476  kubectl logs sale
+  477  kubectl get pod
+  478  kubectl logs sale-6b588b6779-tndpt
+  479  ls
+  480  nano metrics-server-deployment.yaml
+  481  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+  482  kubectl top pods
+  483  kubectl top node
+  484  watch -n 1 kubectl get all
+  485  kubectl get all
+  486  watch -n 1 kubectl get all
+  487  kubectl get pods
+  488  cls
+  489  clear
+  490  kubectl get all
+  491  kubectl delete svc service/sale
+  492  kubectl delete svc sale
+  493  kubectl get all
+  494  kubectl delete deploy sale
+  495  ls
+  496  cd my*
+  497  ls
+  498  cd sale
+  499  mvn package
+  500  \docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1 .
+  501  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v1
+  502  ls
+  503  cd target
+  504  ls
+  505  kubectl get pods
+  506  kubectl logs sale-5c9b69d6fd-lfqhc
+  507  cd ..
+  508  mvn package
+  509  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v2 .
+  510  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v2
+  511  kubectl get all
+  512  kubectl delete svc sale
+  513  kubectl delete deploy sale
+  514  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v2
+  515  kubectl delete deploy sale
+  516  kubectl delete svc sale
+  517  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v2
+  518  kubectl expose deploy sale --type=ClusterIP --port=8080
+  519  cd ..
+  520  cd trading
+  521  cd trade
+  522  mvnpackage
+  523  mvn package
+  524  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v1 .
+  525  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v1
+  526  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v1
+  527  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v1
+  528  kubectl expose deploy trade --type=ClusterIP --port=8080
+  529  cd ..
+  530  cd evaluation
+  531  cd evaluate
+  532  mvn package
+  533  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v1 .
+  534  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v1
+  535  kubectl create deploy evaluate --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v1
+  536  kubectl expose deploy evaluate--type=ClusterIP --port=8080
+  537  kubectl expose deploy evaluate --type=ClusterIP --port=8080
+  538  cd ..
+  539  cd purchas
+  540  cd purchase
+  541  ls
+  542  mvn package
+  543  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v1 .
+  544  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v1
+  545  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v1
+  546  kubectl expose deploy purchase --type=ClusterIP --port=8080
+  547  cd ..
+  548  cd tradecondition
+  549  mvn package
+  550  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v1 .
+  551  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v1
+  552  kubectl create deploy tradecondition --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v1
+  553  kubectl expose deploy tradecondition --type=ClusterIP --port=8080
+  554  kubectl delete svc trade
+  555  kubectl expose deploy trade --type=ClusterIP --port=8080
+  556  kubectl -n kafka exec -ti my-kafka-0 -- /usr/bin/kafka-console-consumer --bootstrap-server my-kafka:9092 --topic mybtrade --from-beginning
+  557  kubectl get all
+  558  cd mybtrade
+  559  ls
+  560  ls
+  561  git pull origin master
+  562  ls
+  563  ls -al
+  564  cd sale
+  565  mvn package
+  566  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3 .
+  567  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3
+  568  \
+  569  kubectl delete svc trade
+  570  kubectl delete deploy trade
+  571  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v2
+  572  kubectl expose deploy trade --type=ClusterIP --port=8080
+  573  docker run --rm k8s.gcr.io/metrics-server:v0.3.6 --help
+  574  kubectl get hpa
+  575  kubectl exec -it httpie bin/bash
+  576  kubectl get hpa
+  577  cat <<EOF | kubectl apply -f -
+  578  apiVersion: "v1"
+  579  kind: "Pod"
+  580  metadata:
+  581    name: httpie
+  582    labels:
+  583      name: httpie
+  584  spec:
+  585    containers:
+  586      - name: httpie
+  587        image: clue/httpie
+  588        command:
+  589          - sleep
+  590          - "360000"
+  591  EOF
+  592  kubectl exec -it httpie bin/bash
+  593  cat <<EOF | kubectl apply -f -
+  594  apiVersion: "v1"
+  595  kind: "Pod"
+  596  metadata:
+  597    name: httpie
+  598    labels:
+  599      name: httpie
+  600  spec:
+  601    containers:
+  602      - name: httpie
+  603        image: clue/httpie
+  604        command:
+  605          - sleep
+  606          - "360000"
+  607  EOF
+  608  kubectl exec -it httpie bin/bash
+  609  kubectl get svc
+  610  kubectl get deploy
+  611  kubectl delete deploy trade
+  612  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v6
+  613  cd trade
+  614  cd mybtr*
+  615  cd trade
+  616  ls
+  617  cd ku*
+  618  kubectl apply -f deployment.yml
+  619  ls
+  620  kubectl apply -f deployment.yml
+  621  nano deployment.yml
+  622  kubectl apply -f deployment.yml
+  623  kuctl get deploy
+  624  kubectl get deploy
+  625  kubectl delete sale
+  626  kubectl delete svc sale
+  627  kubectl delete svc trade
+  628  kubectl delete svc evaluate
+  629  kubectl delete svc purchase
+  630  kubectl delete svc tradecondition
+  631  kubectl delete deploy sale
+  632  kubectl delete deploy trade
+  633  kubectl delete deploy evaluate
+  634  kubectl delete deploy purchase
+  635  kubectl delete deploy tradecondition
+  636  aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com
+  637  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3
+  638  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3
+  639  kubectl expose deploy sale --type=ClusterIP --port=8080
+  640  pwd
+  641  cd trade
+  642  ls
+  643  cd mybtrade
+  644  ls
+  645  cd trade
+  646  mvn package
+  647  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v2 .
+  648  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v2
+  649  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v2
+  650  kubectl expose deploy trade --type=ClusterIP --port=8080
+  651  cd ..
+  652  cd evaluate
+  653  mvn package
+  654  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v2 .
+  655  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v2
+  656  kubectl create deploy evaluate --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v2
+  657  kubectl expose deploy evaluate --type=ClusterIP --port=8080
+  658  cd ..
+  659  \ls
+  660  ls
+  661  cd purchase
+  662  mvn package
+  663  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v2 .
+  664  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v2
+  665  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v2
+  666  kubectl expose deploy purchase --type=ClusterIP --port=8080
+  667  cd ..
+  668  cd tradecon*
+  669  ls
+  670  mvn package
+  671  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v2 .
+  672  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v2
+  673  kubectl create deploy tradecondition --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v2
+  674  kubectl expose deploy tradecondition --type=ClusterIP --port=8080
+  675  cd ..
+  676  cd purchase
+  677  kubectl delete svc purchase
+  678  kubectl delete deploy purchase
+  679  mvn package
+  680  cd ..
+  681  ls
+  682  git pull orgin master
+  683  git pull origin master
+  684  cd purchase
+  685  mvn package
+  686  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v3 .
+  687  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v3
+  688  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v3
+  689  kubectl expose deploy purchase --type=ClusterIP --port=8080
+  690  kuctl top node
+  691  kubectl top node
+  692  watch -n 1 kube top node
+  693  watch -n 1 kubectl top node
+  694  watch -n 1 kubectl top pods
+  695  kubectl get hpa
+  696  kubectl autoscale deployment trade -cpu-percent=5 --min=1 --max10
+  697  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max10
+  698  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  699  kubectl get hpa
+  700  watch -n 1 kubectl get hpa
+  701  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  702  watch -n 1 kubectl get hpa
+  703  kubectl delete hpa
+  704  kubectl delete autoscaler
+  705  kubectl delete autoscale
+  706  kubectl delete hpa trade
+  707  kubectl delete -n kube-system deployments.apps metrics-server
+  708  pwd
+  709  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+  710  kubectl top pod
+  711  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  712  kubectl get hpa
+  713  watch -n 1 kubectl get hpa
+  714  kubectl delete hpa trade
+  715  kubectl delete -n kube-system deployments.apps metrics-server
+  716  curl -L https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml --output components.yaml
+  717  ls
+  718  nano components.yaml
+  719  kubectl apply -f components.yaml
+  720  nano components.yaml
+  721  kubectl apply -f components.yaml
+  722  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  723  watch -n 1 kubectl get hpa
+  724  kubectl get deploy
+  725  kubectl patch deployment trade -p='{"spec":{templete":{"spec":{"containers":[{"name":"trade","resourcees":{"requests":{"cpu":"200m"}}}]}}}}'
+  726  kubectl patch deployment trade -p='{"spec":{"templete":{"spec":{"containers":[{"name":"trade","resourcees":{"requests":{"cpu":"200m"}}}]}}}}'
+  727  watch -n 1 kubectl get hpa
+  728  kubectl delete hpa trade
+  729  kubectl delete -n kube-system deployments.apps metrics-server
+  730  cd mybtrade
+  731  ls
+  732  git pull origin master
+  733  cd trade
+  734  mvn package
+  735  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v3 .
+  736  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v3
+  737  kubectl delete svc trade
+  738  kubectl delete deploy trade
+  739  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v3
+  740  kubectl expose deploy trade --type=ClusterIP --port=8080
+  741  cd\
+  742  cd \
+  743  pwd
+  744  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+  745  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  746  kubectl get hpa
+  747  watch -n 1 kubectl get hpa
+  748  kubectl get deploy
+  749  watch -n 1 kubectl get hpa
+  750  kubectl delete hpa trade
+  751  kubectl delete -n kube-system deployments.apps metrics-server
+  752  kubectl delete svc trade
+  753  kubectl delete deploy trade
+  754  cd mybtrade
+  755  git pull origin master
+  756  cd trade
+  757  mvn package
+  758  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v4 .
+  759  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v4
+  760  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v4
+  761  kubectl expose deploy trade --type=ClusterIP --port=8080
+  762  cd ..
+  763  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+  764  kubectl get pods -n kube-system -l k8s-app=metrics-server
+  765  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  766  watch -n 1 kubectl get hpa
+  767  kubectl get quota
+  768  kubectl delete svc sale
+  769  kubectl deploy deploy sale
+  770  kubectl delete deploy sale
+  771  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3
+  772  kubectl expose deploy sale --type=ClusterIP --port=8080
+  773  kubectl delete svc trade
+  774  kubectl delete deploy trade
+  775  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v4
+  776  kubectl expose deploy trade --type=ClusterIP --port=8080
+  777  kubectl delete hpa trade
+  778  kubectl delete -n kube-system deployments.apps metrics-server
+  779  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+  780  kubectl patch deployment trade -p='{"spec":{"templete":{"spec":{"containers":[{"name":"trade","resourcees":{"requests":{"cpu":"200m"}}}]}}}}'
+  781  kubectl autoscale deployment trade --cpu-percent=5 --min=1 --max=10
+  782  watch -n 1 kubectl get hpa
+  783  kubectl delete svc sale
+  784  kubectl delete svc trade
+  785  kubectl delete svc evaluate
+  786  kubectl delete svc purchase
+  787  kubectl delete svc tradecondition
+  788  kubectl delete deploy sale
+  789  kubectl delete deploy trade
+  790  kubectl delete deploy evaluate
+  791  kubectl delete deploy purchase
+  792  kubectl delete deploy tradecondition
+  793  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v3
+  794  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v4
+  795  kubectl create deploy evaluate --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v2
+  796  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v3
+  797  kubectl create deploy tradecondition --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v2
+  798  kubectl expose deploy sale --type=ClusterIP --port=8080
+  799  kubectl expose deploy trade --type=ClusterIP --port=8080
+  800  kubectl expose deploy evaluate --type=ClusterIP --port=8080
+  801  kubectl expose deploy purchase --type=ClusterIP --port=8080
+  802  kubectl expose deploy tradecondition --type=ClusterIP --port=8080
+  803  pwd
+  804  cd myt*
+  805  cd mybtrade
+  806  ld
+  807  ls
+  808  git pull orgin master
+  809  git pull origin master
+  810  cd trade
+  811  mvn package
+  812  cd ..
+  813  git pull origin master
+  814  cd sale
+  815  mvn package
+  816  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6 .
+  817  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  818  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  819  cd..
+  820  cd ..
+  821  cd trade
+  822  mvn package
+  823  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v6 .
+  824  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v6
+  825  cd ..
+  826  cd eva*
+  827  mvn package
+  828  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v6 .
+  829  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v6
+  830  cd ..
+  831  cd purchase
+  832  mvn package
+  833  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v6 .
+  834  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v6
+  835  cd ..
+  836  cd tradecon*
+  837  mvn package
+  838  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v6 .
+  839  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v6
+  840  cd ..
+  841  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  842  kubectl delete svc sale
+  843  kubectl delete svc trade
+  844  kubectl delete svc evaluate
+  845  kubectl delete svc purchase
+  846  kubectl delete svc tradecondition
+  847  kubectl delete deploy sale
+  848  kubectl delete deploy trade
+  849  kubectl delete deploy evaluate
+  850  kubectl delete deploy purchase
+  851  kubectl delete deploy tradecondition
+  852  \
+  853  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  854  kubectl create deploy trade --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/trade:v6
+  855  kubectl create deploy evaluate --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/evaluate:v6
+  856  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v6
+  857  kubectl create deploy tradecondition --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/tradecondition:v6
+  858  kubectl expose deploy sale --type=ClusterIP --port=8080
+  859  kubectl expose deploy trade --type=ClusterIP --port=8080
+  860  kubectl expose deploy evaluate --type=ClusterIP --port=8080
+  861  kubectl expose deploy purchase --type=ClusterIP --port=8080
+  862  kubectl expose deploy tradecondition --type=ClusterIP --port=8080
+  863  cd trade
+  864  cd mybtrade
+  865  ls
+  866  cd trade
+  867  ls
+  868  cd src
+  869  ls
+  870  cd main
+  871  ls
+  872  cd java
+  873  ls
+  874  cd myb*
+  875  ls
+  876  cd ..
+  877  cd .
+  878  cd ..
+  879  ls
+  880  cd ku*
+  881  ls
+  882  kubectl delete svc trade
+  883  kubectl delete deploy trade
+  884  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/purchase:v6
+  885  kubectl expose deploy trade --type=ClusterIP --port=8080
+  886  kubectl apply -f deployment_readiness.yaml
+  887  kubectl apply -f deployment_readiness.yml
+  888  ls
+  889  kubectl apply -f deploment_readiness.yml
+  890  ls
+  891  kubectl apply -f deploment_readiness.yml
+  892  kubectl apply -f deploment_readiness.yml --validate=false
+  893  kubectl delete svc sale
+  894  kubectl delete deploy sale
+  895  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  896  kubectl expose deploy sale --type=ClusterIP --port=8080
+  897  cd sale
+  898  kubectl delete svc sale
+  899  kubectl delete deploy sale
+  900  kubectl create deploy sale --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/admin08-mybtrade/sale:v6
+  901  kubectl expose deploy sale --type=ClusterIP --port=8080
+  902  kubectl delete svc trade
+  903  cd ..
+  904  ls
+  905  cd sale
+  906  ls
+  907  cd ku*
+  908  ls
+  909  kubectl apply -f deployment.yml
+  910  kubectl exec -it httpie bin/bash
+  911  watch -n 1 kubectl get all
+  912  watch -n 1 kubectl get pod
+  913  watch -n 1 kubectl get all
+  914  su skccadmin
+  915  su skccadmin
+  916  exit
+  917  su skccadmin
+  918  su skccadmin
+  919  su skccadmin
+  920  eksctl version
+  921  mvn
+  922  kubectl images
+  923  docker images
+  924  ekectl delete cluster 052937454741.dkr.ecr.us-east-2.amazonaws.com/user8-cna-mypage
+  925  docker stop --help
+  926  docker images
+  927  docker stop $(docker ps -a -q)
+  928  docker rm $(docker ps -a -q)
+  929  docker rmi @(docker images -q)
+  930  docker images
+  931  git clone https://github.com/niceduck76/aws-order.git
+  932  git clone https://github.com/niceduck76/PEJ_ORDER.git
+  933  ls -al
+  934  cd PEJ_ORDER
+  935  rm -rf ./target
+  936  mvn package
+  937  docker images
+  938  docker build -t 496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_order:v1 .
+  939  docker images
+  940  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 496278789073.dkr.ecr.us-east-2.amazonaws.com
+  941  aws configure
+  942  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 496278789073.dkr.ecr.us-east-2.amazonaws.com
+  943  cd..
+  944  ls
+  945  cd..
+  946  lsd
+  947  ls
+  948  cd PEJ_ORDER
+  949  ls
+  950  cd kubernetes
+  951  la
+  952  cat deployment.yml
+  953  pwd
+  954  cd ..
+  955  cat ~/.aws/config
+  956  vi .bashrc
+  957  dkdkd
+  958  ls
+  959  exit
+  960  aws configure
+  961  cat ~/.aws/config
+  962  cat ~/.aws/credentials
+  963  eksctl version
+  964  kubectl
+  965  kubectl config current-context
+  966  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.us-east-2.amazonaws.com
+  967  git clone https://github.com/zzihi/PEJ_MYPAGE.git
+  968  ls -al
+  969  cd PEJ_MYPAGE
+  970  rm -rf ./target
+  971  mvn package
+  972  docker images
+  973  docker build -t 496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1 .
+  974  docker images
+  975  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 496278789073.dkr.ecr.us-east-2.amazonaws.com
+  976  docker images
+  977  aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 496278789073.dkr.ecr.us-east-2.amazonaws.com
+  978  docker push 496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1
+  979  kubectl create deploy pej-mypage -–image=496278789073.dkr.ecr.us-east-2.amazonaws.com/SkccTeam1-pej-mypage:v1
+  980  kubectl create deploy pej-mypage -–image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej-mypage:v1
+  981  kubectl create deploy pej-mypage --image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej-mypage:v1
+  982  kubectl create deploy pej-mypage --image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1
+  983  aws config
+  984  aws configure
+  985  kubectl create deploy pej-mypage --image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1
+  986  aws configure
+  987  kubectl create deploy pej-mypage --image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1
+  988  cat ~/.aws/credentials
+  989  cat ~/.aws/config
+  990  aws eks --region us-east-2 update-kubeconfig --name skteam1-sk-Cluster
+  991  kubectl config current-context
+  992  kubectl create deploy pej-mypage --image=496278789073.dkr.ecr.us-east-2.amazonaws.com/pej_mypage:v1
+  993  kubectl get all
+  994  kubectl describe pod/
+  995  Kubectl expose deploy pej-mypage –-type=ClusterIP –-port=8080
+  996  kubectl expose deploy pej-order --type=ClusterIP –-port=8080
+  997  kubectl expose deploy pej-mypage --type=ClusterIP –-port=8080
+  998  kubectl expose deploy pej-mypage --type=ClusterIP --port=8080
+  999  helm
+ 1000  cd..
+ 1001  cd ..
+ 1002  kafka
+ 1003  curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+ 1004  kubectl --namespace kube-system create sa tiller
+ 1005  kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+ 1006  helm init --service-account tiller
+ 1007  kubectl get all
+ 1008  kubectl get all -o wide
+ 1009  kubectl get all
+ 1010  kubectl log pod/mypage-65f77897c5-v7ksh -f
+ 1011  kubectl logs pod/mypage-65f77897c5-v7ksh -f
+ 1012  kubectl get all
+ 1013  kubectl logs pod/product-65f54bbb74-pjxlt -f
+ 1014  kubectl get all
+ 1015  kubectl get po -w
+ 1016  aws config
+ 1017  aws configure
+ 1018  eksctl create cluster --name skccuser04-sk-Cluster --version 1.15 --nodegroup-name standard-workers --node-type t3.medium --nodes 2 --nodes-min 1 --nodes-max 3
+ 1019  mkdir tbdelivery
+ 1020  ;s
+ 1021  ls
+ 1022  cd tbdelivery
+ 1023  git clone https://github.com/niceduck76/tbdelivery.git
+ 1024  ls -al
+ 1025  cd tbdelivery/
+ 1026  ls
+ 1027  rm -rf ./target
+ 1028  mvn package
+ 1029  cd ..
+ 1030  l;s
+ 1031  ls
+ 1032  docker images
+ 1033  docker image rm $(docker images -q)
+ 1034  docker images
+ 1035  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1 .
+ 1036  aws ecr get-login-password --region ap-northeast-2
+ 1037  aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com
+ 1038  aws configure
+ 1039  aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com
+ 1040  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1 .
+ 1041  ls
+ 1042  cd tbdelivery
+ 1043  ls
+ 1044  cd tbdelivery
+ 1045  ls
+ 1046  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1 .
+ 1047  docker images
+ 1048  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1
+ 1049  aws eks --region ap-northeast-2 update-kubeconfig --name skccuser04-sk-Cluster
+ 1050  kubectl config current-context
+ 1051  kubectl get all
+ 1052  kubectl get pod
+ 1053  kubectl get all
+ 1054  kubectl create deploy delivery --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1
+ 1055  kubectl get all
+ 1056  kubectl expose deploy delivery --type=ClusterIP --port=8080
+ 1057  kubectl get all
+ 1058  kafka
+ 1059  curl https://raw.githubusercontent.com/kubernetes/helm/master/scripts/get | bash
+ 1060  kubectl --namespace kube-system create sa tiller
+ 1061  kubectl create clusterrolebinding tiller --clusterrole cluster-admin --serviceaccount=kube-system:tiller
+ 1062  helm init --service-account tiller
+ 1063  kubectl patch deploy --namespace kube-system tiller-deploy -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+ 1064  cd ..
+ 1065  helm repo add incubator http://storage.googleapis.com/kubernetes-charts-incubator
+ 1066  helm repo update
+ 1067  helm install --name my-kafka --namespace kafka incubator/kafka
+ 1068  ls -al
+ 1069  mkdir tbgateway
+ 1070  ls
+ 1071  cd tbgateway/
+ 1072  ls
+ 1073  git clone https://github.com/niceduck76/tbgateway.git
+ 1074  ls
+ 1075  cd tbgateway/
+ 1076  ls
+ 1077  rm -rf ./target
+ 1078  mvn package
+ 1079  docker images
+ 1080  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1 .
+ 1081  docker images
+ 1082  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-delivery:v1
+ 1083  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1084  docker images
+ 1085  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1086  kubectl expose deploy gateway --type=LoadBalancer --port=8080
+ 1087  kubectl get all
+ 1088  cd ..
+ 1089  ls
+ 1090  mkdir tbmypage
+ 1091  cd tbmypage/
+ 1092  git clone https://github.com/niceduck76/tbmypage.git
+ 1093  LS
+ 1094  ls
+ 1095  cd tbmypage/
+ 1096  ls
+ 1097  rm -rf ./target
+ 1098  mvn package
+ 1099  docker images
+ 1100  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-mypage:v1 .
+ 1101  docker images
+ 1102  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-mypage:v1
+ 1103  kubectl create deploy mypage --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-mypage:v1
+ 1104  kubectl get all
+ 1105  kubectl expose deploy mypage --type=ClusterIP --port=8080
+ 1106  kubectl get all
+ 1107  cd ..
+ 1108  ls
+ 1109  mkdir tborder
+ 1110  cd tborder/
+ 1111  ls
+ 1112  git clone https://github.com/niceduck76/tborder.git
+ 1113  ls
+ 1114  cd tborder/
+ 1115  ls
+ 1116  cd ..
+ 1117  ls
+ 1118  cd..
+ 1119  cd ..
+ 1120  git clone https://github.com/niceduck76/tborder.git
+ 1121  cd tborder
+ 1122  git clone https://github.com/niceduck76/tborder.git
+ 1123  ls
+ 1124  cd ..
+ 1125  rm -rf ./tborder
+ 1126  ls
+ 1127  mrdir tborder
+ 1128  mkdir tborder
+ 1129  cd tborder/
+ 1130  git clone https://github.com/zzihi/PEJ_ORDER.git
+ 1131  ls
+ 1132  rm -rf ./PEJ_ORDER
+ 1133  ls
+ 1134  git clone https://github.com/niceduck76/tborder.git
+ 1135  ls
+ 1136  cd tborder/
+ 1137  ls
+ 1138  rm -rf ./target
+ 1139  mvn package
+ 1140  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-order:v1 .
+ 1141  docker images
+ 1142  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-order:v1
+ 1143  kubectl create deploy order --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-order:v1
+ 1144  kubectl get all
+ 1145  kubectl expose deploy order --type=ClusterIP --port=8080
+ 1146  kubectl get all
+ 1147  cd ..
+ 1148  ls
+ 1149  mrdir tbproduct
+ 1150  mkdir tbproduct
+ 1151  cd tbproduct/
+ 1152  git clone https://github.com/niceduck76/tbproduct.git
+ 1153  ls
+ 1154  cd tbproduct/
+ 1155  ls
+ 1156  rm -rf ./target
+ 1157  mvn package
+ 1158  -docker images
+ 1159  docker images
+ 1160  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-product:v1 .
+ 1161  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-product:v1
+ 1162  kubectl create deploy product --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-product:v1
+ 1163  kubectl get all
+ 1164  kubectl expose deploy product --type=ClusterIP --port=8080
+ 1165  kubectl get all
+ 1166  cd ..
+ 1167  mkdir tbpurchase
+ 1168  ls
+ 1169  cd tbpurchase/
+ 1170  git clone https://github.com/niceduck76/tbpurchase.git
+ 1171  ls
+ 1172  cd tbpurchase/
+ 1173  ls
+ 1174  rm -rf ./target
+ 1175  mvn package
+ 1176  docker images
+ 1177  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v1 .
+ 1178  docker images
+ 1179  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v1
+ 1180  docker images
+ 1181  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v1
+ 1182  kubectl get all
+ 1183  kubectl expose deploy purchase --type=ClusterIP --port=8080
+ 1184  kubectl get all
+ 1185  cd ..
+ 1186  http POST 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+ 1187  httpie
+ 1188  http
+ 1189  cat <<EOF | kubectl apply -f -
+ 1190  apiVersion: "v1"
+ 1191  kind: "Pod"
+ 1192  metadata:
+ 1193    name: httpie
+ 1194    namespace: istio-cb-ns
+ 1195    labels:
+ 1196      name: httpie
+ 1197  spec:
+ 1198    containers:
+ 1199      - name: httpie
+ 1200        image: clue/httpie
+ 1201        command:
+ 1202          - sleep
+ 1203          - "360000"
+ 1204  EOF
+ 1205  cat <<EOF | kubectl apply -f -
+ 1206  apiVersion: "v1"
+ 1207  kind: "Pod"
+ 1208  metadata:
+ 1209    name: httpie
+ 1210    namespace: istio-cb-ns
+ 1211    labels:
+ 1212      name: httpie
+ 1213  spec:
+ 1214    containers:
+ 1215      - name: httpie
+ 1216        image: clue/httpie
+ 1217        command:
+ 1218          - sleep
+ 1219          - "360000"
+ 1220  EOF
+ 1221  cat <<EOF | kubectl apply -f -
+ 1222  apiVersion: "v1"
+ 1223  kind: "Pod"
+ 1224  metadata:
+ 1225    name: httpie
+ 1226    labels:
+ 1227      name: httpie
+ 1228  spec:
+ 1229    containers:
+ 1230      - name: httpie
+ 1231        image: clue/httpie
+ 1232        command:
+ 1233          - sleep
+ 1234          - "360000"
+ 1235  EOF
+ 1236  http
+ 1237  apt install httpie
+ 1238  http
+ 1239  http POST 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+ 1240  http POST http://052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+ 1241  http http://052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/orders
+ 1242  aws configure
+ 1243  PH9yrhF6jKIdvl7MYK48etL4oC3jBwY2gwQwV5tD
+ 1244  aws configure
+ 1245  http POST http://052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+ 1246  kubectl get all
+ 1247  http POST a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/orders orderId="1" prdId="111" prdQty=100 prdPrice=1000 prdNm="과자"
+ 1248  http a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/deliveries
+ 1249  http a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/products
+ 1250  kubectl get all
+ 1251  http POST a027ce386fe6c4cd0a56988bedd93a6a-1193647194.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="11" purchaseStatus="구매" prdId="001" purchaseQty=3 purchaseAmt="3000" prdNm="껌" prdPrice="1000" custNm="구매자"
+ 1252  sudo mount -t efs -o tls fs-07434666:/ efs
+ 1253  kubectl apply -f ./kubernetes/deploy_pvc.yaml
+ 1254  ls
+ 1255  cd tbgateway/
+ 1256  git clone https://github.com/niceduck76/tbgateway.git
+ 1257  ls
+ 1258  cd tbgateway/
+ 1259  git clone https://github.com/niceduck76/tbgateway.git
+ 1260  ls
+ 1261  rm -rf ./target
+ 1262  mvn package
+ 1263  docker images
+ 1264  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1 .
+ 1265  docker images
+ 1266  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1267  aws configure
+ 1268  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1269  aws eks --region ap-northeast-2 update-kubeconfig --name skccuser04-sk-Cluster
+ 1270  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1271  aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com
+ 1272  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1273  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1274  kubectl deploy,service gateway
+ 1275  kubectl delete deploy,service product
+ 1276  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1277  kubectl get all
+ 1278  kubectl expose deploy gateway --type=LoadBalancer --port=8080
+ 1279  kubectl get all
+ 1280  cd ..
+ 1281  ls
+ 1282  mkdir tbmarketing
+ 1283  cd tbmarketing/
+ 1284  ls
+ 1285  git clone https://github.com/niceduck76/tbmarketing.git
+ 1286  cd tbmarketing/
+ 1287  ls
+ 1288  rm -rf ./target
+ 1289  mvn package
+ 1290  dicker images
+ 1291  docker images
+ 1292  er      v1                  6393cf3434fa        17 hours ago        165MB
+ 1293  052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-mypage     v1                  c2ec569a09c7        17 hours ago        165MB
+ 1294  052937454741.dkr.ecr.ap-nor
+ 1295  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketing:v1 .
+ 1296  docker images
+ 1297  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketing:v1
+ 1298  kubectl create deploy tbmarketing --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketing:v1
+ 1299  kubectl get all
+ 1300  kubectl expose deploy tbmarketing --type=ClusterIP --port=8080
+ 1301  kubectl get all
+ 1302  cd ..
+ 1303  ls
+ 1304  mkdir tbmarketingboard
+ 1305  cd tbmarketingboard
+ 1306  git clone https://github.com/niceduck76/tbmarketingboard.git
+ 1307  ls
+ 1308  cd tbmarketingboard
+ 1309  ls
+ 1310  rm -rf ./target
+ 1311  mvn package
+ 1312  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketingboard:v1 .
+ 1313  docker images
+ 1314  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketingboard:v1
+ 1315  kubectl create deploy tbmarketingboard --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-tbmarketingboard:v1
+ 1316  kubectl get all
+ 1317  kubectl expose deploy tbmarketingboard --type=ClusterIP --port=8080
+ 1318  cls
+ 1319  clear
+ 1320  cd ..
+ 1321  http POST 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1322  kubectl get all
+ 1323  http POST a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1324  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases
+ 1325  kubectl delete deploy purchase
+ 1326  kubectl delete deploy purchases
+ 1327  kubectl get all
+ 1328  kubectl create deploy purchase --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-purchase:v1
+ 1329  kubectl get all
+ 1330  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases
+ 1331  http POST a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1332  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketingBoards
+ 1333  http PATCH a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings/1 purchaseStatus="DM발송"
+ 1334  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketingBoardshttp localhost:8088/purchases
+ 1335  http localhost:8088/purchases
+ 1336  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1337  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases
+ 1338  kubectl -n kafka exec -ti my-kafka-0 -- kafka-console-consumer --bootstrap-server my-kafka:9092 --topic PEJ --from-beginning
+ 1339  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1340  kubectl get all
+ 1341  kubectl logs -f -c pod/tbmarketing-6857ccc7d-8lwcx
+ 1342  kubectl logs -f -p pod/tbmarketing-6857ccc7d-8lwcx
+ 1343  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1344  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbmarketings
+ 1345  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchase
+ 1346  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/purchases
+ 1347  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbmarketings
+ 1348  http a061c0db32a444cb384f261bef9cfbb3-1186414173.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1349  cd tbgateway/
+ 1350  git clone https://github.com/niceduck76/tbgateway.git
+ 1351  cd tbgateway/
+ 1352  rm -rf ./target
+ 1353  mvn package
+ 1354  aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com
+ 1355  docker images
+ 1356  docker build -t 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1 .
+ 1357  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1358  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1359  kubectl expose deploy gateway --type=LoadBalancer --port=8080
+ 1360  kubectl get all
+ 1361  docker push 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1362  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1363  kubectl get pods gateway-7bbf8fc786-xl2cr
+ 1364  kubectl delete pods gateway-7bbf8fc786-xl2cr
+ 1365  kubectl get pods gateway-7bbf8fc786-xl2cr
+ 1366  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1367  kubectl get all
+ 1368  kubectl expose deploy gateway --type=LoadBalancer --port=8080
+ 1369  kubectl get all
+ 1370  kubectl delete deploy,service gateway
+ 1371  kubectl create deploy gateway --image=052937454741.dkr.ecr.ap-northeast-2.amazonaws.com/skccuser4-gateway:v1
+ 1372  kubectl expose deploy gateway --type=LoadBalancer --port=8080
+ 1373  kubectl get all
+ 1374  \http POST ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1375  celar
+ 1376  clear
+ 1377  http POST ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1378  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1379  kubectl history
+ 1380  history
+ 1381  kubectl -n kafka exec -ti my-kafka-0 -- kafka-console-consumer --bootstrap-server my-kafka:9092 --topic PEJ --from-beginning
+ 1382  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/purchases
+ 1383  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbmarketings
+ 1384  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1385  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/products
+ 1386  cd ..
+ 1387  clear
+ 1388  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbMarketings
+ 1389  http ac78a29e4cb294f3ea6b853437739bfa-1763317759.ap-northeast-2.elb.amazonaws.com:8080/tbMarketingBoards
+ 1390  kubectl -n kafka exec -ti my-kafka-0 -- kafka-console-consumer --bootstrap-server my-kafka:9092 --topic PEJ --from-beginning
+ 1391  kubectl get all
+ 1392  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/download/v0.3.6/components.yaml
+ 1393  kubectl get deployment metrics-server -n kube-system
+ 1394  kubectl apply -f https://k8s.io/examples/application/php-apache.yaml
+ 1395  kubectl autoscale deployment php-apache --cpu-percent=20 --min=1 --max=10
+ 1396  kubectl get hpa
+ 1397  kubectl top nodes
+ 1398  kubectl get hpa
+ 1399  kubectl autoscale deploy purchase --min=1 --max=10 --cpu-percent=15
+ 1400  kubectl get hpa
+ 1401  watch kubectl get pod,hpa
+ 1402  http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/purchases
+ 1403  http POST localhost:8088/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1404  http POST localhost:8080/purchases purchaseId="1" purchaseStatus="구매" prdId="001" purchaseQty=2 purchaseAmt="5000" prdNm="담배" prdPrice="4500" custNm="010-8724-6264"
+ 1405  http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/purchases
+ 1406  http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/tbMarketings/
+ 1407  http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/tbMarketings
+ 1408  kubectl get all -o wide
+ 1409  http 052937454741.dkr.ecr.ap-northeast-2.amazonaws.com:8080/purchases
+ 1410  history
